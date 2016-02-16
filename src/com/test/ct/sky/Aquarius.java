@@ -9,7 +9,6 @@ import android.graphics.Paint;
 import android.graphics.PaintFlagsDrawFilter;
 import android.graphics.Path;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.view.animation.CycleInterpolator;
 
@@ -33,8 +32,9 @@ public class Aquarius extends View{
     int mCentY=-1;
     int mRadius=-1;
 
+    boolean bClip=true;
     long mDuration=3000;
-    float mCycles = 0.25f;
+    float mWaveCycles = 0.25f;
     int mWaterLevelPercent=50;
     float mWaveHeightRatio=6;
 
@@ -69,8 +69,7 @@ public class Aquarius extends View{
         mCentX = mWidth/2;
         mCentY = mHeight/2;
         mRadius = Math.min(mWidth,mHeight)/2;
-        mContainerPath.addCircle(mCentX,mCentY,mRadius, Path.Direction.CCW);
-        mWaterLevel =mHeight/2;
+        mContainerPath.addCircle(mCentX, mCentY, mRadius, Path.Direction.CCW);
         initAnim();
     }
 
@@ -79,24 +78,20 @@ public class Aquarius extends View{
         super.onDraw(canvas);
 
         canvas.setDrawFilter(mDrawFilter);
-        canvas.clipPath(mContainerPath);
-        canvas.drawCircle(mCentX, mCentY, mRadius, mContainerPaint);
+
+        if(bClip){
+            canvas.clipPath(mContainerPath);
+            canvas.drawCircle(mCentX, mCentY, mRadius, mContainerPaint);
+        }else{
+            canvas.drawRect(0,0,mWidth,mHeight,mContainerPaint);
+        }
         canvas.drawRect(0, mWaterLevel, mWidth, mHeight, mWaterPaint);
 
         canvas.save(Canvas.MATRIX_SAVE_FLAG);
         canvas.drawPath(mWaterPath, mWaterPaint);
         canvas.restore();
 
-        //test control point
-//        canvas.drawCircle(moveX,moveY,10,mContainerPaint);
-
-        // test water level
-//        canvas.drawLine(0, mWaterLevel,mWidth, mWaterLevel,mContainerPaint);
-
-
     }
-
-//    int moveX,moveY;
 
     private void initAnim(){
         mWaveHeight = (int) (mHeight/mWaveHeightRatio);
@@ -110,7 +105,7 @@ public class Aquarius extends View{
         mWaveAnim.setDuration(mDuration);
         mWaveAnim.setRepeatCount(ValueAnimator.INFINITE);
         mWaveAnim.setRepeatMode(ValueAnimator.RESTART);
-        mWaveAnim.setInterpolator(new CycleInterpolator(mCycles));
+        mWaveAnim.setInterpolator(new CycleInterpolator(mWaveCycles));
         mWaveAnim.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
@@ -121,37 +116,77 @@ public class Aquarius extends View{
                 mWaterPath.quadTo(x, mWaterLevel + y, mWidth, mWaterLevel);
 //                Log.d(TAG, "moveX:" + moveX);
 
-//                moveX=x;
-//                moveY=mWaterLevel+y;
-
                 invalidate();
             }
         });
         mWaveAnim.start();
     }
 
+
     //for test
+    public boolean isPaintFill(){
+        return mWaterPaint.getStyle()==Paint.Style.FILL;
+    }
     public void setPaintFill(boolean fill){
         Paint.Style style=(fill?Paint.Style.FILL:Paint.Style.STROKE);
         mWaterPaint.setStyle(style);
 
     }
 
+    public long getWaveDuration(){
+        return mDuration;
+    }
+
     public void setWaveDuration(long duration){
         mDuration=duration;
-        initAnim();
     }
-    public void setCycles(float cycles){
-        mCycles=cycles;
-        initAnim();
+
+    public float getWaveCycles(){
+        return mWaveCycles;
     }
-    public void setWaveRatio(float heightRatio){
+
+    public void setWaveCycles(float cycles){
+        mWaveCycles =cycles;
+    }
+
+    public float getWaveHeightRatio(){
+        return mWaveHeightRatio;
+    }
+
+    public void setWaveHeightRatio(float heightRatio){
         mWaveHeightRatio = heightRatio;
-        initAnim();
     }
+
+    public int getWaterLevelPercent(){
+        return mWaterLevelPercent;
+    }
+
     public void setWaterLevelPercent(int level){
         mWaterLevelPercent=level;
-        initAnim();
+    }
 
+    public boolean isClipped(){
+        return bClip;
+    }
+
+    public void setClipped(boolean clip){
+        bClip=clip;
+    }
+
+//    public boolean isAnim(){
+//        return mWaveAnim!=null && mWaveAnim.isRunning();
+//    }
+    public void setAnim(boolean start){
+        if(mWaveAnim!=null){
+            if(start && !mWaveAnim.isRunning()){
+                mWaveAnim.start();
+            }else if(!start && mWaveAnim.isRunning()){
+                mWaveAnim.cancel();
+            }
+        }
+    }
+
+    public void reset(){
+        initAnim();
     }
 }

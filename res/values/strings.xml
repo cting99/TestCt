@@ -92,12 +92,14 @@
     <string name="doov_extra_incoming_notice">请打开皮套进行操作</string>
 
 
+    <string name="ac_aquarius_text_set">Set</string>
     <string name="ac_aquarius_change_paint_style_fill">Fill</string>
     <string name="ac_aquarius_change_paint_style_stroke">Stroke</string>
+    <string name="ac_aquarius_change_clip">Clip circle</string>
+    <string name="ac_aquarius_anim">Anim</string>
     <string name="ac_aquarius_wave_height_ratio">Wave height ratio:</string>
     <string name="ac_aquarius_wave_duration">Wave duraion:</string>
+    <string name="ac_aquarius_wave_cycles">Wave cycles:</string>
     <string name="ac_aquarius_water_level">Water level:</string>
-    <string name="ac_aquarius_wave_cycles">Cycles:</string>
-    <string name="ac_aquarius_text_set">Set</string>
 
 </resources>
