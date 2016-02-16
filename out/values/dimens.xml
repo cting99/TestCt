@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!-- [96916],hall phone screen,chengting,@20130903,end --> 
+    <dimen name="bird_hall_phone_widget_horz_padding">20dip</dimen>
+    <dimen name="bird_hall_phone_name_or_number_height">30dip</dimen>
+    <dimen name="bird_hall_phone_name_or_number_text_size">23sp</dimen>
+    <dimen name="bird_hall_phone_state_text_size">13sp</dimen>
+    <dimen name="bird_hall_phone_indicator_margin">5dip</dimen>
+    <dimen name="bird_hall_phone_indicator_width">15dip</dimen>
+    <dimen name="bird_hall_phone_indicator_height">16dip</dimen>
+    <dimen name="bird_hall_phone_action_icon_length">56dip</dimen>
+    <dimen name="bird_hall_phone_widget_height">112dip</dimen>
+    <dimen name="bird_hall_phone_widget_width">112dip</dimen>
+    <dimen name="bird_hall_phone_widget_bottom_margin">13dip</dimen>
+    
+    <dimen name="bird_hall_phone_screen_simple_top_padding">30dip</dimen>
+    <dimen name="bird_hall_phone_screen_complex_top_padding">10dip</dimen>
+    <dimen name="bird_hall_phone_screen_top_padding">0dip</dimen>
+    <dimen name="bird_hall_callstate_top_margin">63dip</dimen>
+    <!--
+    	bird_hall_phone_widget_width / 2
+    	= bird_hall_phone_indicator_margin * 2 + bird_hall_phone_indicator_width * 3
+    	= bird_hall_phone_action_icon_length * 2
+    -->
+    <!-- [96916],hall phone screen,chengting,@20130903,end -->
+    <dimen name="bird_hall_phone_drip_widget_padding_horz">5dip</dimen>
+    <dimen name="bird_hall_phone_drip_diameter">180dip</dimen>
+    <dimen name="bird_hall_phone_drip_widget_padding_top">55dip</dimen>
+    <dimen name="bird_hall_phone_drip_icon_diameter">60dip</dimen>
+    <dimen name="bird_hall_phone_drip_text_size">16sp</dimen>
+    <dimen name="bird_hall_phone_drip_call_icon_margin">3dip</dimen>
+    
+    
+    <dimen name="bird_image_clock_top_padding">30dip</dimen>
+    <dimen name="bird_hall_alarm_icon_top_padding">3dip</dimen>
+    <dimen name="bird_image_clock_number_height">58dip</dimen>
+    <dimen name="bird_image_clock_number_width">40dip</dimen>
+    <dimen name="bird_image_clock_dot_width">30dip</dimen>
+    
+    <dimen name="bird_circular_window_top_padding">-7dip</dimen>
+    <dimen name="bird_circular_window_diameter">267dip</dimen>
+    <dimen name="bird_hall_circular_alarm_btn_margin_vert">10dip</dimen>
+    <dimen name="bird_hall_circular_alarm_btn_width">55dip</dimen>
+    <dimen name="bird_hall_circular_alarm_btn_height">55dip</dimen>
+    
+    <dimen name="bird_alternative_widget_horz_padding">25dip</dimen>
+    <dimen name="bird_alternative_widget_top_padding">25dip</dimen>
+    
+    <dimen name="bird_alternative_height">112dip</dimen>
+    <dimen name="bird_alternative_width">112dip</dimen>
+    
+    <dimen name="bird_one_direction_target_diameter">56dip</dimen>
+    <dimen name="bird_one_direction_point_diameter">3dip</dimen>
+    
+    <!-- mate 7 hall ui begin  -->
+    <dimen name="bird_one_direction_padding_top">25dip</dimen>
+    <dimen name="bird_one_direction_padding_horz">25dip</dimen>
+    <dimen name="bird_one_direction_height">112dip</dimen>
+    
+    <dimen name="bird_phone_one_direction_icon_diameter">50dip</dimen>
+    <dimen name="bird_phone_one_direction_point_diameter">3dip</dimen>
+    
+    <dimen name="bird_alarm_one_direction_target_diameter">56dip</dimen>
+    <dimen name="bird_alarm_one_direction_point_diameter">3dip</dimen>
+    <!-- mate 7 hall ui end  -->
+    
+    
+    
+    <dimen name="bird_mate_widget_icon_length">56dip</dimen>
+    <dimen name="bird_mate_widget_point_diameter">6dip</dimen>
+    
+    <dimen name="app_list_item_icon_size">35dip</dimen>
+    
+    <dimen name="bird_autofit_primary_call_name_size_max">48sp</dimen>
+    <dimen name="bird_autofit_primary_call_name_size_min">28sp</dimen>
+    <dimen name="bird_autofit_primary_call_banner_name_number_right_padding">3dip</dimen>
+    <dimen name="bird_autofit_primary_call_location_size_small">8sp</dimen>
+    
+    
+    <dimen name="bird_fto_list_horz_padding">16dip</dimen>
+    
+    <dimen name="bird_call_log_filter_notice_title_height">45dip</dimen>
+    <dimen name="bird_call_log_filter_radio_title_height">30dip</dimen>    
+    <dimen name="bird_call_log_filter_radio_height">40dip</dimen>    
+    <dimen name="bird_call_log_filter_grid_vert_spacing">10dip</dimen>    
+    <dimen name="bird_call_log_filter_radio_horz_padding">10dip</dimen>    
+    <dimen name="bird_call_log_filter_title_horz_padding">4dp</dimen>
+
+    <dimen name="bird_radio_group_title_height">30dip</dimen>
+    <dimen name="bird_radio_container_vert_spacing">20dip</dimen>
+    
+    <dimen name="vertu_volume_panel_radius">140dip</dimen>
+    <dimen name="vertu_volume_stream_radius">5dip</dimen>
+    <dimen name="vertu_volume_ringmode_btn_radius">75dip</dimen>
+    <dimen name="vertu_volume_mute_btn_radius">110dip</dimen>
+    <dimen name="vertu_volume_setting_btn_radius">16dip</dimen>
+    <dimen name="vertu_volume_path_radius">100dip</dimen>
+    <dimen name="vertu_silent_profile_panel_bottom_margin">20dip</dimen>
+    <dimen name="vertu_silent_profile_row_padding_vertical">10dip</dimen>
+    <dimen name="vertu_silent_profile_mute_text_big">23sp</dimen>
+    <!-- @} -->
+
+    <!-- bird: doov hall incall ui,chengting,@20151215 { -->
+    <dimen name="doov_hall_incall_top_padding">20dip</dimen>
+    <dimen name="doov_hall_incall_window_diameter">270dip</dimen>
+    <dimen name="doov_hall_incall_call_card_paddingTop">30dip</dimen>
+    <!--<dimen name="doov_hall_incall_call_card_height">130dip</dimen>-->
+    <dimen name="doov_hall_phone_state_text_size">13sp</dimen>
+    <dimen name="doov_hall_phone_name_or_number_text_size">23sp</dimen>
+    <dimen name="doov_hall_phone_sim_info_text_size">13sp</dimen>
+    <dimen name="doov_hall_incall_answer_widget_paddingTop">125dip</dimen>
+    <dimen name="doov_hall_incall_answer_widget_width">267dip</dimen>
+    <dimen name="doov_hall_incall_answer_widget_height">112dip</dimen>
+    <dimen name="doov_hall_incall_answer_widget_handle_paddingHorz">26dip</dimen>
+    <dimen name="doov_hall_incall_answer_widget_icon_diameter">58dip</dimen>
+    <dimen name="doov_hall_incall_answer_widget_shimmer_diameter">52dip</dimen>
+    <dimen name="doov_hall_incall_answer_widget_wave_diameter">104dip</dimen>
+    <!-- @} -->
+
+    <dimen name="doov_aquarius_width">70dip</dimen>
+</resources>

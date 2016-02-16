@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="hello">Hello World, TestSmsActivity!</string>
+    <string name="app_name">CT Test</string>
+    <string name="ac_notification_control">通知管理</string>
+    
+    <string name="bird_hall_drip_phone_pick">接听</string>
+    <string name="bird_hall_drip_phone_reject">拒绝</string>
+    <string name="bird_hall_drip_phone_end">挂断</string>
+    <string name="bird_hall_drip_phone_notice_fling">随意\n滑动图标</string>
+    <string name="bird_hall_drip_phone_notice_end">划动图标以结束通话</string>
+    
+    <string name="vertu_volume_view_mute">静音到</string>
+    <string name="vertu_silent_profile_title">静音铃声</string>
+    <string name="vertu_silent_profile_mute_time">关闭</string>
+    <string name="vertu_silent_profile_mute_30min">30分</string>
+    <string name="vertu_silent_profile_mute_1hour">1小时</string>
+    <string name="vertu_silent_profile_mute_2hour">2小时</string>
+    <string name="vertu_silent_profile_keep_mute">保持静音</string>
+    <string name="vertu_silent_profile_mute_until">到\u2026</string>
+    <string name="vertu_silent_notify_title">静音到<xliff:g id="time">%s</xliff:g></string>
+    <string name="vertu_silent_notify_summary">轻触以重新启用铃声</string>
+    <string name="vertu_silent_toast_mute">静音到<xliff:g id="time">%s</xliff:g></string>
+    <string name="vertu_silent_toast_ring">已重新开启铃声</string>
+    
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="@dimen/doov_hall_incall_window_diameter"
+        android:layout_height="@dimen/doov_hall_incall_window_diameter"
+        android:layout_centerHorizontal="true"
+        >
+        <com.test.ct.sky.Aquarius
+            android:layout_width="@dimen/doov_aquarius_width"
+            android:layout_height="@dimen/doov_aquarius_width"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/doov_hall_incall_window_diameter"
+            android:layout_height="@dimen/doov_hall_incall_window_diameter"
+            android:background="@drawable/doov_beauty_charge" />
+
+        <com.test.ct.sky.FlickerView
+            android:layout_width="@dimen/doov_hall_incall_window_diameter"
+            android:layout_height="@dimen/doov_hall_incall_window_diameter"
+            />
+
+        <com.test.ct.sky.GrassLand
+            android:layout_width="@dimen/doov_hall_incall_window_diameter"
+            android:layout_height="@dimen/doov_hall_incall_window_diameter"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

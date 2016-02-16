@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <Switch
+            android:id="@+id/paint_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="@string/ac_aquarius_change_paint_style_fill"
+            android:textOff="@string/ac_aquarius_change_paint_style_stroke"
+            />
+        <include layout="@layout/set_value_view"
+            android:id="@+id/wave_height_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <include layout="@layout/set_value_view"
+            android:id="@+id/wave_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <include layout="@layout/set_value_view"
+            android:id="@+id/water_level_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <include layout="@layout/set_value_view"
+            android:id="@+id/cycles_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <com.test.ct.sky.Aquarius
+        android:id="@+id/aqurius"
+        android:layout_width="300dip"
+        android:layout_height="300dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

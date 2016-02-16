@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="ime_test">"IME TEST"</string>
+    
+    <string name="hello">Hello World, TestSmsActivity!</string>
+    <string name="app_name">CT Test</string>
+    
+    <integer name="grideview_column">4</integer>
+    
+    <string name="ac_notification_control">notification control</string>
+    <string name="ac_sensor_test">sensor test</string>
+    <string name="ac_app_list">app list</string>
+    <string name="ac_wallpaper_change">Wallpaper change</string>
+    <string name="ac_wallpaper_change2">Wallpaper change2</string>
+    <string name="ac_status_bar">status bar</string>
+    <string name="ac_drip_test">Drip Widget</string>
+    <string name="ac_mate7">Mate7 Widget</string>
+    <string name="ac_music_test">Music test</string>
+    <string name="ac_view_test">View test</string>
+    <string name="ac_real_1">Real activity1</string>
+    <string name="ac_real_2">Real activity2</string>
+    <string name="ac_alias">Alias </string>
+    <string name="ac_viewpager">ViewPager </string>
+    <string name="ac_bluetooth">Bluetooth </string>
+    <string name="ac_volume">Volume </string>
+    <string name="ac_doov">Doov </string>
+    <string name="ac_doov_sky">Doov sky</string>
+    <string name="ac_flicker">Flicker</string>
+    <string name="ac_grass_land">Plant</string>
+    <string name="ac_aquarius">Aquarius</string>
+
+    <string name="time_am">am</string>
+    
+    <string name="music_play_pause">Play or pause</string>
+    <string name="music_prev">Prev</string>
+    <string name="music_next">Next</string>
+    
+    <string name="wallpaper_change">Change</string>
+    <string name="bird_hall_phone_sim_info">SIM卡 <xliff:g id="slotNumbers">%s</xliff:g></string>
+    <string name="phone_number">10086</string>
+    <string name="phone_sim_card_slot">1</string>
+    <string name="phone_call_time">00:23</string>
+    <string name="phone_state_incoming">incoming</string>
+    <string name="phone_state_outgoing">outgoing</string>
+    <string name="phone_state_hangup">hangup</string>
+    <string name="bird_rolling_ring">rollring</string>
+    
+    <string name="bird_hall_drip_phone_pick">Answer</string>
+    <string name="bird_hall_drip_phone_reject">Decline</string>
+    <string name="bird_hall_drip_phone_end">End</string>
+    <string name="bird_hall_drip_phone_notice_fling">Swipe an icon\nin any direction</string>
+    <string name="bird_hall_drip_phone_notice_end">Swip icon to end call</string>
+    
+    <string name="bird_hall_alarm_text">alarm</string>
+    
+    <string name="bird_fto_call_log_filter_type_title">Call type</string>
+    <string name="bird_fto_call_log_filter_account_title">Account</string>
+    <string name="bird_fto_call_log_filter_all">All</string>
+    <string name="bird_fto_call_log_filter_missed">Missed</string>
+    <string name="bird_fto_call_log_filter_incoming">Incoming</string>
+    <string name="bird_fto_call_log_filter_outgoing">Outgoing</string>
+    <string name="bird_fto_call_log_filter_reject">Reject</string>
+    <string name="bird_fto_call_log_filter_stranger">Stranger</string>
+    <string name="bird_fto_call_log_filter_account_all">All</string>
+    <string name="bird_fto_call_log_filter_account_sim1">SIM1</string>
+    <string name="bird_fto_call_log_filter_account_sim2">SIM2</string>
+    <string name="bird_fto_call_log_all_notice">All call logs</string>
+    <string name="bird_fto_call_log_via_sim_name_notice">\" <xliff:g id="sim_name">%s</xliff:g> \" <xliff:g id="call_type">%s</xliff:g> CALL LOGS</string>
+     
+     <!-- confirm before turn on airplane or data connection,chengting,begin -->
+   <string name="bird_confirm_msg_turn_on_airplane">开启飞行模式将关闭您的通话、信息和数据网络功能，同时也将关闭WLAN和蓝牙等连接性功能。是否打开飞行模式？</string>
+   <string name="bird_confirm_msg_turn_on_data_connection">开启移动数据网络将耗费数据流量，是否打开？</string>
+   <string name="bird_confirm_msg_turn_on_data_connection_gemini">当前使用的是卡<xliff:g id="slog_id_1">%1$s</xliff:g>数据流量，是否切换到卡<xliff:g id="slog_id_2">%1$s</xliff:g>数据流量?</string>
+    <!-- confirm before turn on airplane or data connection,chengting,end -->
+    
+    <string name="vertu_volume_view_mute">Muted until</string>
+    <string name="vertu_silent_profile_title">Mute ringtones</string>
+    <string name="vertu_silent_profile_mute_time">For</string>
+    <string name="vertu_silent_profile_mute_30min">30m</string>
+    <string name="vertu_silent_profile_mute_1hour">1h</string>
+    <string name="vertu_silent_profile_mute_2hour">2h</string>
+    <string name="vertu_silent_profile_keep_mute">Keep muted</string>
+    <string name="vertu_silent_profile_mute_until">Until\u2026</string>
+    <string name="vertu_silent_notify_title">Ringtones muted until<xliff:g id="time">%s</xliff:g></string>
+    <string name="vertu_silent_notify_summary">Touch to reactivate your ringtone</string>
+    <string name="vertu_silent_toast_mute">Muted until<xliff:g id="time">%s</xliff:g></string>
+    <string name="vertu_silent_toast_ring">Ringtones reactived</string>
+
+    <string name="doov_phone_sim_card_info">中国移动1</string>
+    <string name="doov_hold_and_pick_notice">是否接听并保持当前通话？</string>
+    <string name="doov_extra_incoming_notice">请打开皮套进行操作</string>
+
+
+    <string name="ac_aquarius_change_paint_style_fill">Fill</string>
+    <string name="ac_aquarius_change_paint_style_stroke">Stroke</string>
+    <string name="ac_aquarius_wave_height_ratio">Wave height ratio:</string>
+    <string name="ac_aquarius_wave_duration">Wave duraion:</string>
+    <string name="ac_aquarius_water_level">Water level:</string>
+    <string name="ac_aquarius_wave_cycles">Cycles:</string>
+    <string name="ac_aquarius_text_set">Set</string>
+
+</resources>
